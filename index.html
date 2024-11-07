@@ -12,9 +12,43 @@
   <main>
     <h2>Add Employee</h2>
     <h2>Employees</h2>
+    <form>
+    <input 
+    data-testid="firstNameinput"
+    type="text" 
+    placeholder="First Name"
+    id="firstNameInput">
+  <input 
+  data-testid="lastNameinput"
+  type="text" 
+  placeholder="Last Name"
+  id="lastNameinput"
+  >
+  <input 
+  data-testid="idInput"
+  type="number" 
+  placeholder="ID Number"
+  id="idInput"
+  >  
+  <input 
+  data-testid="titleInput"
+  type="text" 
+  placeholder="Title"
+  id="titleInput"
+  >
+  <input 
+  data-testid="annualSalaryInput"
+  type="number" 
+  placeholder="Annual Salary"
+  id="annualSalaryInput"
+  >
+    <button
+    data-testid="submitButton"
+     onClick="submitHandle()">submit</button>
   </main>
   <footer>
     <p>Total Monthly</p>
   </footer>
 </body>
 </html>
+
