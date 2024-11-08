@@ -10,8 +10,12 @@
     <h1>Salary Calculator</h1>
   </header>
   <main>
+    // section created for employees 
+
+    <section>
     <h2>Add Employee</h2>
-    <h2>Employees</h2>
+
+    // form with five inputs that collect a new employee's *first name, last name, ID number, job title, annual salary.
     <form>
     <input 
     data-testid="firstNameinput"
@@ -44,10 +48,38 @@
   >
     <button
     data-testid="submitButton"
-     onClick="submitHandle()">submit</button>
+     onClick="submitHandle()">submit
+    </button>
+    </form>
+    </section>
+<section>
+    <h2>Employees</h2>
+      <table>
+        <thead>
+          <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Annual Salary</th>
+          <th></th>
+          </tr>
+        </thead>
+        <tbody id="employeeTable">
+          <!-- Employees are rendered here! -->
+        </tbody>
+      </table>
+    </section>
   </main>
   <footer>
-    <p>Total Monthly</p>
+    <p>Total Monthly: $<span id="totalMonthlySalary">👾</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Monthly cost</th>
+        </tr>
+      </thead>
+    </table>
   </footer>
 </body>
 </html>
